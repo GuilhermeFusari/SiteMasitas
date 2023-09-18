@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="with-device-with, initial-scale = 1.0">
+        <title>Masita's</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />    
+        <head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Imagens/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+               <h1>Cardápio Masita's</h1> 
+        </section>
+        <!---Cardapio-->
+        <section class="cardapio">
+            <h1>Kits de Frango Assado do Masita's</h1>
+            <p>Esses são os combos disponiveis para você</p>
+            <div class="row">
+                <div class="cardapio-col">
+                    <h3>Kit Masita's</h3>
+                    <p>Neste kit você irá receber o frango + uma porção de farofa + uma porcão de batatas.</p>
+                </div>
+                <div class="cardapio-col">
+                    <h3>Kit Completo</h3>
+                    <p>Neste kit você irá receber o frango + uma porção de farofa + uma porcão de batatas e também
+                        uma maionese de 500g ou 250g dependendo da sua escolha.
+                    </p>
+                </div>
+                <div class="cardapio-col">
+                    <h3>Kit Completão</h3>
+                    <p>Neste kit você irá receber o frango + uma porção de farofa + uma porcão de batatas +
+                        uma maionese de 500g ou 250g dependendo da sua escolha e pra finalizar uma marmita
+                        de macarrão de 500g.</p>
+                </div>
+            </div>
+            <h1>Mais Variedades</h1>
+            <p>Outros Pratos disponiveis no Masita's</p>
+            <div class="row">
+                <div class="cardapio-col">
+                    <h3>Macarrão</h3>
+                    <img src="Imagens/macarrao.jpg" width="100%">
+                    <p>Porção de Macarrão de 500g.</p>
+                </div>
+                <div class="cardapio-col">
+                    <h3>Nhoque</h3>
+                    <img src="Imagens/nhoque.jpg" width="70%">
+                    <p>Porção de nhoque de 500g.
+                    </p>
+                </div>
+                <div class="cardapio-col">
+                    <h3>Torresmo de Rolo</h3>
+                    <img src="Imagens/torresmo.jpg" width="135%" heigh="100%">
+                    <p>Você pode escolher quantos torresmos quiser, o valor dele é cobrado por Kg.</p>
+                </div>
+                <div class="cardapio-col">
+                    <h3>Salgados</h3>
+                    <img src="Imagens/salgados.jpg" width="100%" heigh="100%">
+                    <p>Uma variedade enorme de Salgados, para todos os gostos.</p>
+                </div>
+            </div>
+            <h1>Também fazemos a carne que você quiser sob encomenenda</h1>
+            <p>Não deixe de ligar para encomendar a sua</p>
+            <div>
+                <div>
+                    <h3>Costela e Joelho de Porco</h3>
+                    <video width="135" height="240" controls>
+                        <source src="videos/video.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <!---PRATOS MAIS PEDIDOS-->
+
+        <!---CTA-->
+
+        <!--JavaScript para fechar e abrir o menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        <!---FOOTER-->
+        <section class="footer">
+            <h4>SOBRE NÓS</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                 ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation 
+                 ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> Duis aute irure dolor in reprehenderit 
+                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                 mollit anim id est laborum.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+            </div>
+        </section>
+
+    </body>
+</html>

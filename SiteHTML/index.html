@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta src="UTF-8">
+        <meta name="viewport" content="with-device-with, initial-scale = 1.0">
+        <title>Masita's</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />    
+        <head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Imagens/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Restaurante Masita's</h1>
+                <p>O Melhor Frango Assado de Rio Preto</p>
+                <a href="contato.html" class="hero-btn">Reserve o seu agora mesmo</a>
+            </div>
+
+        </section>
+        <!---Cardápio-->
+        <section class="cardapio">
+            <h1>Kits de Frango Assado do Masita's</h1>
+            <p>Esses são os combos disponiveis para você</p>
+            <div class="row">
+                <div class="cardapio-col">
+                    <h3>Kit Masita's</h3>
+                    <p>Neste kit você irá receber o frango + uma porção de farofa + uma porcão de batatas.</p>
+                </div>
+                <div class="cardapio-col">
+                    <h3>Kit Completo</h3>
+                    <p>Neste kit você irá receber o frango + uma porção de farofa + uma porcão de batatas e também
+                        uma maionese de 500g ou 250g dependendo da sua escolha.
+                    </p>
+                </div>
+                <div class="cardapio-col">
+                    <h3>Kit Completão</h3>
+                    <p>Neste kit você irá receber o frango + uma porção de farofa + uma porcão de batatas +
+                        uma maionese de 500g ou 250g dependendo da sua escolha e pra finalizar uma marmita
+                        de macarrão de 500g.</p>
+                </div>
+            </div>
+
+        </section>
+        <!---PRATOS MAIS PEDIDOS-->
+        <section class="pratos">
+            <h1>Pratos Mais Pedidos do Masita's</h1>
+            <P>Esses são alguns dos Pratos com mais saidas do nosso restaurante, <br>não deixe de experimenta-los</P>
+            <div class="row">
+                <div class="pratos-col">
+                    <img src="Imagens/frango.jpg">
+                    <div class="layer">
+                        <h3>FRANGO</h3>
+                    </div>
+                </div>
+                <div class="pratos-col">
+                    <img src="Imagens/macarrao.jpg">
+                    <div class="layer">
+                        <h3>MACARRÃO</h3>
+                    </div>
+                </div>
+                <div class="pratos-col">
+                    <img src="Imagens/nhoque.jpg" height="65%">
+                    <div class="layer">
+                        <h3>NHOQUE</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---CTA-->
+        <section class="cta">
+            <h1>Reserve Já o Seu Frango</h1>
+            <a href="contato.html" class="hero-btn">Contato</a>
+        </section>
+
+
+        <!--JavaScript para fechar e abrir o menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        <!---FOOTER-->
+        <section class="footer">
+            <h4>SOBRE NÓS</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                 ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation 
+                 ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> Duis aute irure dolor in reprehenderit 
+                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                 mollit anim id est laborum.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+            </div>
+        </section>
+
+    </body>
+</html>
